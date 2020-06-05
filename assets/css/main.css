@@ -1,0 +1,151 @@
+/* Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main Styles */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100%;
+}
+.container {
+  width: 100%;
+  height: auto;
+}
+
+/* Nav */
+nav {
+  display: flex;
+  justify-content: flex-end;
+  margin: 2rem auto;
+}
+
+.nav__links {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+}
+
+.nav__links--item {
+  margin-left: 1rem;
+}
+
+.nav__links--item:last-child {
+  margin-right: 2rem;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Main */
+main {
+  margin: 20rem auto 40rem auto;
+}
+
+/* Banner */
+.section__banner--bannerimg {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Search bar */
+.section__search {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+  margin: 0 auto 2rem auto;
+  padding: 1rem 1rem 1rem 1rem;
+  border: 1px solid #c2c2c2;
+  border-radius: 1.8rem;
+}
+
+.section__search--searchbar {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+/* Search Buttons */
+.section__buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.section__buttons--searchbtn,
+.section__buttons--luckybtn {
+  background: #f2f2f2;
+  padding: 1rem 1rem;
+  border: 1px solid #b8b8b8;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.section__buttons--searchbtn {
+  margin-right: 3.5rem;
+}
+
+.section__languages {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.section__languages--selection {
+  font-size: 1.4rem;
+}
+
+.section__languages--selection a {
+  color: #0000ff;
+}
+
+/* Footer */
+footer {
+  background-color: #f2f2f2;
+  color: #c2c2c2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  padding: 1.5rem 0;
+}
+
+.footer__left-links,
+.footer__right-links {
+  display: flex;
+  list-style: none;
+  align-items: space-between;
+}
+
+.footer__left-links {
+  margin-left: 2rem;
+}
+
+.footer__right-links {
+  margin-right: 2rem;
+}
+
+.footer__left-links--item {
+  margin-right: 1rem;
+}
+
+.footer__right-links--item:not(:last-child) {
+  margin-right: 1rem;
+}
